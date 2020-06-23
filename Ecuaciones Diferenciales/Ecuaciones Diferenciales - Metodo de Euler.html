@@ -13242,7 +13242,7 @@ $$x_{k+1} = x_k + f(t_k,x_k) h.$$<p>hasta cubrir todo el intervalo $[0,T]$ (es d
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">T</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
-<span class="n">t</span><span class="o">=</span><span class="n">collect</span><span class="p">(</span><span class="mi">0</span><span class="o">:.</span><span class="mi">01</span><span class="o">:</span><span class="n">T</span><span class="p">)</span>
+<span class="n">t</span><span class="o">=</span><span class="n">collect</span><span class="p">(</span><span class="mi">0</span><span class="o">:</span><span class="mf">0.01</span><span class="o">:</span><span class="n">T</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">x0</span><span class="o">*</span><span class="n">exp</span><span class="o">.</span><span class="p">(</span><span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="n">t</span><span class="p">));</span>
 
 <span class="n">h</span><span class="o">=</span><span class="mf">0.1</span><span class="p">;</span>

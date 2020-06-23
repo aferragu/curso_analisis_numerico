@@ -13149,8 +13149,8 @@ $$ p(x) = \sum_{i=0}^n y_i L_i (x).$$<p>Una vez calculada la base, la combinaci�
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Ejemplo">Ejemplo<a class="anchor-link" href="#Ejemplo">&#182;</a></h3><p>Veamos un ejemplo con $n=4$ utilizando el paquete <code>Polynomials</code> de Julia. Este paquete permite construir un polinomio de la siguiente manera:</p>
 <ul>
-<li><code>p=Poly(v);</code> construye el polinomio <code>p</code> a partir de los coeficientes en <code>v</code> (de $0$ a $n$).</li>
-<li><code>p=poly(v);</code> construye el polinomio <code>p</code> con raíces dadas por el vector <code>v</code>.</li>
+<li><code>p=Polynomial(v);</code> construye el polinomio <code>p</code> a partir de los coeficientes en <code>v</code> (de $0$ a $n$).</li>
+<li><code>p=fromroots(v);</code> construye el polinomio <code>p</code> con raíces dadas por el vector <code>v</code>.</li>
 <li>Dado <code>p</code> se puede evaluar el polinomio usando <code>p(x)</code> con <code>x</code> real o <code>polyval(p,x)</code>.</li>
 <li>Las operaciones <code>+</code>, <code>-</code>, <code>*</code>, etc aplican a polinomios.</li>
 </ul>
@@ -13303,7 +13303,7 @@ $$ p(x) = \sum_{i=0}^n y_i L_i (x).$$<p>Una vez calculada la base, la combinaci�
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c">## evaluo en un vector con más resolución</span>
 
-<span class="n">xx</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="o">:.</span><span class="mi">01</span><span class="o">:</span><span class="mi">5</span><span class="p">);</span>
+<span class="n">xx</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="o">:</span><span class="mf">0.01</span><span class="o">:</span><span class="mi">5</span><span class="p">);</span>
 
 <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s">&quot;*&quot;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span><span class="n">p1</span><span class="o">.</span><span class="p">(</span><span class="n">xx</span><span class="p">));</span>
